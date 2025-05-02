@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Your Name</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #0d47a1;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 1rem;
+    }
+
+    .about, .projects, .contact {
+      margin-top: 2rem;
+    }
+
+    .project {
+      background: #e3f2fd;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #0d47a1;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background: #0d47a1;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a frontend developer with experience in React.js, HTML, CSS, and JavaScript. 
+      I build user-friendly web applications and love turning ideas into reality using code.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A responsive portfolio site to showcase my skills and projects.</p>
+    </div>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>A React-based weather application that fetches real-time data using an API.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
